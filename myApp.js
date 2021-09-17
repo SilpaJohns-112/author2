@@ -35,7 +35,7 @@ const createManyPeople = (arrayOfPeople, done) => {
 
   var arrayOfPeople = [
     {name: "Christeena", age: 24, favoriteFoods: ["chappati"]},
-    {name: "Silpa", age: 23, favoriteFoods: ["chicken biriyani"]},
+    {name: "Silpa", age: 23, favoriteFoods: ["shake"]},
     {name: "Philomina", age: 22, favoriteFoods: ["cake"]}
   ];
   
