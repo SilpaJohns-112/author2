@@ -13,7 +13,7 @@ var personSchema = new Schema({
 
 
 
-var createAndSavePerson = function(done)  {
+const createAndSavePerson = function(done)  {
   var silpaJohns = new Person({name: "Silpa Johns", age: 23, favoriteFoods: ["noodles", "cake", "shake"]});
 
   silpaJohns.save(function(err, data) {
@@ -30,13 +30,15 @@ const createManyPeople = (arrayOfPeople, done) => {
     {name: "Silpa", age: 23, favoriteFoods: ["shake"]},
     {name: "Philomina", age: 22, favoriteFoods: ["cake"]}
   ];
-  
+
+
   var createManyPeople = function(arrayOfPeople, done) {
     Person.create(arrayOfPeople, function (err, people) {
       if (err) return console.log(err);
       done(null, people);
     });
   };
+
   
 
   //done(null /*, data*/);
