@@ -115,8 +115,8 @@ const removeById = (personId, done) => {
       (err, removedDoc) => {
         if(err) return console.log(err);
         done(null, removedDoc);
-      }
-    ); 
+      })
+    
   };
 
 
