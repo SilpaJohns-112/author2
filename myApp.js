@@ -8,20 +8,12 @@ var personSchema = new Schema({
   age: Number,
   favoriteFoods: [String]
 });
-var  Person = mongoose.model("Person", personSchema);
- var useful=new Person({
-  name: "Useful",
-  age:24,
-  favoriteFoods:["chappathi","appam"]
-});
-
-var Person = mongoose.model('Person', personSchema);
 
 
 
 
 
-const createAndSavePerson = function(done)  {
+var createAndSavePerson = function(done)  {
   var silpaJohns = new Person({name: "Silpa Johns", age: 23, favoriteFoods: ["noodles", "cake", "shake"]});
 
   silpaJohns.save(function(err, data) {
