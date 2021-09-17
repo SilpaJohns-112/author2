@@ -25,10 +25,3 @@
     "license": "MIT"
 }
 
-const Schema = mongoose.Schema;
-const personSchema = new Schema({
-    name: { type: "Silpa", required: true },
-    age: 23,
-    favoriteFoods: ["Noodles"]
-  });
-  const Person = mongoose.model("Person", personSchema);
