@@ -143,7 +143,7 @@ const removeById = (personId, done) => {
       if(err) console.log(err);
       done(null,data);
     });
-    //done(null /*, data*/);
+    
   };
 
   
