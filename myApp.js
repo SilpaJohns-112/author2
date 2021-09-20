@@ -115,21 +115,21 @@ const removeById = (personId, done) => {
       (err, removedDoc) => {
         if(err) return console.log(err);
         done(null, removedDoc);
-      })
-    
+      }
+      );
+    };
+  
+
+
+  const removeManyPeople = (done) => {
+    const nameToRemove = "Mary";
+    Person.remove({name: nameToRemove}, (err, response) => {
+      if(err) return console.log(err);
+      done(null, response);
+    })
   };
 
 
-
-
-const removeManyPeople = (done) => {
-  const nameToRemove = "Mary";
-Person.remove({name: nameToRemove}, (err, response) => {
-    if(err) return console.log(err);
-    done(null, response);
-  })
-};
-  
 
 
 const queryChain = (done) => {
